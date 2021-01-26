@@ -12,6 +12,24 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/colorWhite</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="actionBarStyle">@style/Stonks.ActionBar</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Stonks.ActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="title">@string/app_name</item>
+        <item name="elevation">2dp</item>
+        <item name="android:backgroundTint">@color/colorWhite</item>
+        <item name="actionBarSize">80dp</item>
+        <item name="android:actionBarSize">80dp</item>
+        <item name="titleTextColor">@color/black</item>
+        <item name="titleTextStyle">@style/Stonks.ActionBar.Title</item>
+    </style>
+
+    <style name="Stonks.ActionBar.Title" parent="">
+        <item name="android:textSize">22sp</item>
+        <item name="fontWeight">700</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="titleTextColor">@color/black</item>
     </style>
 </resources>
